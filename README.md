@@ -1,71 +1,47 @@
-# plagin README
+# Плагин, преобразующий строчные буквы в заглавные
+# VS Code Extension: Lowercase to Uppercase (TypeScript)
 
-This is the README for your extension "plagin". After writing up a brief description, we recommend including the following sections.
+## Описание
 
-## Features
+**Lowercase to Uppercase** — это простое расширение для Visual Studio Code, написанное на TypeScript, которое преобразует выделенный текст в верхний регистр. Оно полезно для разработчиков и авторов, которым нужно быстро изменить регистр текста в коде или документации.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Установка
 
-For example if there is an image subfolder under your extension project workspace:
+1. Склонируйте этот репозиторий или скачайте его как ZIP и распакуйте.
+2. Откройте Visual Studio Code и загрузите папку с вашим проектом расширения.
+3. Установите необходимые зависимости:
+   
+   ```
+   npm install
+   ```
+4. Запустите расширение в режиме отладки:
+ * Нажмите ```F5```, чтобы открыть новое окно VS Code с установленным расширением.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Использование
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Выделите текст, который нужно преобразовать в верхний регистр.
+    
+2. Откройте командную палитру ```Ctrl + Shift + P``` или ```Cmd + Shift + P``` на macOS. 
+3. Введите ***Convert Selection to Uppercase*** и нажмите ```Enter```. 
+4. Выделенный текст преобразуется в верхний регистр.
 
-## Requirements
+## Команды
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```
+extension.uppercaseSelection	// Преобразует выделенный текст в верхний регистр.
+```
 
-## Extension Settings
+## Структура проекта
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+* **src/extension.ts** : Основной файл расширения, содержащий логику для команды преобразования текста.
+  
+* **package.json** : Описание расширения, его команды и настройки.
+* **.vscode/** : Папка с настройками для отладки и сборки расширения.
 
-For example:
+## Требования
 
-This extension contributes the following settings:
+* **Visual Studio Code**
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* **Node.js и npm**
+* **TypeScript** ( установите глобально через ```npm install -g typescript``` )
+   
