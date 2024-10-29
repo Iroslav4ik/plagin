@@ -44,4 +44,7 @@ extension.uppercaseSelection	// Преобразует выделенный те
 
 * **Node.js и npm**
 * **TypeScript** ( установите глобально через ```npm install -g typescript``` )
+
+
+                                                                                Работу выполнил Сидрович Ярослав группа M3120
    
